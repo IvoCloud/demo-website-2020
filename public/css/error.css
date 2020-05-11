@@ -1,0 +1,9 @@
+.err_msg{
+    margin-left: 40px;
+    padding: 20px;
+    font-weight: bold;
+    height: 600px;
+    background-image: url("../spongebob.png");
+    background-size:  contain;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,48 @@
+.products{
+    margin: 80px auto;
+}
+
+.products__ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+.product--image{
+    border: #cccccc 1px solid;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product--description{
+    display: block;
+    margin: auto;
+}
+
+.product--description--val{
+    margin-top: 0.5rem;
+    display: block;
+    text-align: center;
+}
+
+.product{
+    display: inline-block;
+    width: 200px;
+    border: white 1px solid;
+    padding: 8px;
+    height: 600px;
+    vertical-align: top;
+    background: whitesmoke;
+}
+
+.product:hover{
+    border: #a7ec99 1px solid;
+    background: rgb(240, 237, 237);
+}
+
+p{
+    display: inline-block;
+    width: 50%;
+}

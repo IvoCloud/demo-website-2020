@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сайт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="/css/shared.css">
+    <link rel="stylesheet" href="/css/products.css">
+
+</head>
+
+<body>
+    <header class="left-bar">
+        <div id="left-bar__sales">
+            <a href="#product-overview">%</a>
+        </div>
+        <div id="left-bar__cart">
+            <a href="#product-overview">>></a>
+        </div>
+        <div id="left-bar__top">
+            <a href="#top-header">Up</a>
+        </div>
+    </header>
+    <header class="top-header">
+        Top header
+    </header>
+    <header class="main-header">
+        <div>
+            <a href="/" class="main-header__brand">
+                uHost
+            </a>
+        </div>
+        <form class="main-header__search" action="/action_page.php">
+            <label for="searchProd"></label>
+            <input type="text" id="searchProd" name="searchProd"><br><br>
+        </form>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item category">
+                    <a href="/">Начало</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="">Продукти</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/admin/add-product">Админ</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background-img"></div>
+        <section class="package" id="plus">
+            <a class="plans" href="#">
+                <h1>Our PLUS Plan</h1>
+                <h2 id="package__badge">RECOMMENDED</h2>
+                <h2>The most popular choice of our customers.</h2>
+                <p>Benefit from increased storage and faster support to ensure that your mission-critical data and applications
+                    are always available!</p>
+            </a>
+        </section>
+        <section class="free-plan">
+            <a class="plans" href="#">
+                <h1>Our FREE Plan</h1>
+                <h2>An extremely solid start into our hosting world.</h2>
+                <p>Get started immediately at zero cost!</p>
+            </a>
+        </section>
+        <section>
+            <a class="plans premium" href="#">
+                <h1>Our PREMIUM Plan</h1>
+                <h2>All your enterprise needs. Instant support, guaranteed uptime. </h2>
+                <p>The best solution for small to large enterprises. Because hosting shouldn't be in the way!</p>
+            </a>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

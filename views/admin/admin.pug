@@ -1,0 +1,40 @@
+extends ../templates/template.pug
+
+block scripts
+  script(src="../scripts.js")
+block cssStyles
+  link(rel='stylesheet' href='/css/admin.css')
+  link(rel='stylesheet' href='/css/products.css')
+block content
+  .main__product-form--add
+    h3.main__product-form--title Нов продукт
+    div.main__form-control
+        label(for="title") Име
+        input#title(type="text" name="title")
+    div.main__form-control
+        label(for="quantity") Количество
+        input#quantity(type="text" name="quantity")
+    br
+    div.main__form-control
+      label(for="price") Цена
+      input#price(type="text" name="price")
+
+    div.main__form-control.main__form-control--description
+        label(for="description") Описание
+        textarea#description(name="description",rows="5")
+    br
+    div.main__form-control__button
+      button#btn-add.button(type="submit") Добави
+  div.products
+    ul.products__ul
+      each product in products
+        li.product
+          h2.product--name #{product.title}
+          img.product--image(src="../testImg.webp")
+          p.product--price Цена
+          p.product--price--val #{product.price}$
+          p.product--quantity Количество
+          p.product--quantity--val #{product.quantity}
+          p.product--description Описание
+          p.product--description--val #{product.description}
+      

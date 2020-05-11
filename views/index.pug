@@ -1,0 +1,56 @@
+extends templates/template.pug
+block scripts
+  script(src="scripts.js")
+block cssStyles
+  link(rel="stylesheet", href="/css/main.css")
+block content
+  section#product-overview
+  section#plans
+    h1.section-title Choose your plan
+    .plan__list
+      article.plan
+        h1 FREE
+        h2 $0/month
+        h3 For hobby projects or small teams.
+        ul
+          li 1 Workspace
+          li Unlimited Traffic
+          li 10GB Storage
+          li Basic Support
+        div
+          button.button CHOOSE PLAN
+      article.plan.recommended
+        p.plan--highlighted RECOMMENDED
+        h1 PLUS
+        h2 $29/month
+        h3 For ambitious projects.
+        ul
+          li 5 Workspaces
+          li Unlimited Traffic
+          li 100GB Storage
+          li Plus Support
+        div
+          button.button CHOOSE PLAN
+      article.plan
+        h1 PREMIUM
+        h2 $99/month
+        h3 Your enterprise solution.
+        ul
+          li 10 Workspaces
+          li Unlimited Traffic
+          li Unlimited Storage
+          li Priority Support
+        div
+          button.button CHOOSE PLAN
+  section#key-features
+    h1.section-title Many Good Reasons to Stick Around
+    ul.key-feature__list
+      li.key-feature
+        .key-feature__image
+        p.key-feature__description 3,857,000 Trusting Customers
+      li.key-feature
+        .key-feature__image
+        p.key-feature__description 99.999% Uptime Guarantee
+      li.key-feature
+        .key-feature__image
+        p.key-feature__description Lightning Fast CDN

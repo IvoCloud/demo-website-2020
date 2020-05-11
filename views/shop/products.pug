@@ -1,0 +1,20 @@
+extends ../templates/template.pug
+
+block scripts
+  script(src="../scripts.js")
+block cssStyles
+  link(rel='stylesheet' href='/css/products.css')
+
+block content
+  div.products
+    ul.products__ul
+      each product in products
+        li.product
+          h2.product--name.text-center #{product.title}
+          img.product--image(src="../testImg.webp")
+          p.product--price Цена
+          p.product--price--val.text-center #{product.price}$
+          p.product--quantity.text-center Количество
+          p.product--quantity--val.text-center #{product.quantity}
+          p.product--description.text-center Описание
+          p.product--description--val.text-center #{product.description}

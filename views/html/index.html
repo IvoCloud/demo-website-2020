@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сайт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="/css/shared.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+    <header class="left-bar">
+        <div id="left-bar__sales">
+            <a href="#product-overview">%</a>
+        </div>
+        <div id="left-bar__cart">
+            <a href="#product-overview">>></a>
+        </div>
+        <div id="left-bar__top">
+            <a href="#top-header">Up</a>
+        </div>
+    </header>
+    <header class="top-header">
+        Top header
+    </header>
+    <header class="main-header">
+        <div>
+            <a href="/" class="main-header__brand">
+                uHost
+            </a>
+        </div>
+        <form class="main-header__search" action="/action_page.php">
+            <label for="searchProd"></label>
+            <input type="text" id="searchProd" name="searchProd"><br><br>
+        </form>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item category">
+                    <a href="/">Начало</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="">Продукти</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="admin/add-product">Админ</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="product-overview">
+
+        </section>
+        <section id="plans">
+            <h1 class="section-title">Choose your plan</h1>
+            <div class="plan__list">
+                <article class="plan">
+                    <h1>FREE</h1>
+                    <h2>$0/month</h2>
+                    <h3>For hobby projects or small teams.</h3>
+                    <ul>
+                        <li>1 Workspace</li>
+                        <li>Unlimited Traffic</li>
+                        <li>10GB Storage</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <div>
+                        <button class="button">CHOOSE PLAN</button>
+                    </div>
+                </article>
+                <article class="plan recommended">
+                    <h1 class="plan--highlighted">RECOMMENDED</h1>
+                    <h1>PLUS</h1>
+                    <h2>$29/month</h2>
+                    <h3>For ambitious projects.</h3>
+                    <ul>
+                        <li>5 Workspaces</li>
+                        <li>Unlimited Traffic</li>
+                        <li>100GB Storage</li>
+                        <li>Plus Support</li>
+                    </ul>
+                    <div>
+                        <button class="button">CHOOSE PLAN</button>
+                    </div>
+                </article>
+                <article class="plan">
+                    <h1>PREMIUM</h1>
+                    <h2>$99/month</h2>
+                    <h3>Your enterprise solution.</h3>
+                    <ul>
+                        <li>10 Workspaces</li>
+                        <li>Unlimited Traffic</li>
+                        <li>Unlimited Storage</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <div>
+                        <button class="button">CHOOSE PLAN</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="key-features">
+            <h1 class="section-title">Many Good Reasons to Stick Around</h1>
+            <ul class="key-feature__list">
+                <li class="key-feature">
+                    <div class="key-feature__image">
+
+                    </div>
+                    <p class="key-feature__description">3,857,000 Trusting Customers</p>
+                </li>
+                <li class="key-feature">
+                    <div class="key-feature__image">
+
+                    </div>
+                    <p class="key-feature__description">99.999% Uptime Guarantee</p>
+                </li>
+                <li class="key-feature"> 
+                    <div class="key-feature__image">
+
+                    </div>
+                    <p class="key-feature__description">Lightning Fast CDN</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

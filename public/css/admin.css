@@ -1,0 +1,35 @@
+.main__add-product{
+    margin-top: 50px;
+    display: inline-block;
+    background: red;
+    height: 100px;
+    width: 80%;
+}
+
+.main__product-form--add,
+.main__product-form--edit{
+    margin: auto;
+    background: rgb(231, 213, 172);
+    padding: 16px;
+    width: 80%;
+}
+
+.main__product-form--title{
+    margin: 5px auto;
+    text-align: center;
+}
+.main__form-control{
+    display: inline-block;
+    width: 50%;
+    padding: 10px 0px;
+}
+
+.main__form-control>label{
+    font-weight: bold;
+    color: #0e4f1f;
+    margin-right: 10px;
+}
+
+.main__form-control__button{
+    text-align: center;
+}

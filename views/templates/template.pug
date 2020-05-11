@@ -1,0 +1,51 @@
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title #{pageTitle}
+    link(href='https://fonts.googleapis.com/css2?family=Anton&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' rel='stylesheet')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+    link(rel='stylesheet' href='/css/shared.css')
+    block scripts
+    block cssStyles
+body.container-fluid
+    //- .backdrop
+    header.left-bar
+        #left-bar__sales
+            a(href='#product-overview') %
+        #left-bar__cart
+            a(href='#product-overview') &gt;&gt;
+        #left-bar__top
+            a(href='#top-header') Up
+    header.top-header
+        | Top header
+    header.main-header
+        .container.main-header__container
+            a.main-header__brand(href='/')
+                | uHost
+            form.main-header__search(action='/action_page.php')
+                label(for='searchProd')
+                input#searchProd(type='text' name='searchProd')
+            nav.main-nav
+                ul.main-nav__items
+                    li.main-nav__item.category
+                        a(href='/', class=(pageTitle==='Начало' ? 'active' : '')) Начало
+                    li.main-nav__item
+                        a(href='/products', class=(pageTitle==='Продукти' ? 'active' : '')) Продукти 
+                    li.main-nav__item
+                        a(href='/admin/add-product', class=(pageTitle==='Админ' ? 'active' : '')) Aдмин
+                    li.main-nav__item
+                        a(href='/contacts', class=(pageTitle==='Контакти' ? 'active' : '')) Контакти
+    main
+        .container.background-ccc
+            block content
+    //- footer.main-footer
+    //-     nav
+    //-         ul
+    //-             li
+    //-                 a(href='#') Support
+    //-             li
+    //-                 a(href='#') Terms of Use
